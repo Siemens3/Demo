@@ -7,4 +7,4 @@
 # Description : counts the number of cpus on guest machine
 # Options  
 
-  printf"%sn" "The number of cpus running are: "grep 'processor' /proc/cpuinfo | wc -l
+  printf "%s\n" "The number of cpus running are: " grep 'processor' /proc/cpuinfo | wc -l
