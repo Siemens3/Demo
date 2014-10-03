@@ -7,4 +7,7 @@
 # Description : counts the number of cpus on guest machine
 # Options  
 
-  printf "The number of cpus running are: "grep 'processor' /proc/cpuinfo | wc -l
+cpucnt=$(grep 'processor' /proc/cpuinfo | wc -l)
+  
+printf "The number of cpus running are: %s\n" $cpucnt
+
